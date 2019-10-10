@@ -1,0 +1,7 @@
+{
+    "name": "Silhoutte",
+    "short_name": "Silhoutte",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait"
+}
