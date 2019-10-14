@@ -4,12 +4,21 @@
   "description": "My profile",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 -p 8081"
+    "clean": "rm -rf node_modules",
+    "start": "http-server -c-1 -p 4200",
+    "scss": "node-sass public/src/scss/main.scss --o public/src/css --compressed",
+    "serve": "npm run scss && npm run start"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^0.11.0",
-    "ecstatic": "3.3.0"
+    "http-server": "^0.11.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "bootstrap": "^4.3.1"
   }
 }
